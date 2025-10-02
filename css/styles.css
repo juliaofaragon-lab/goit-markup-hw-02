@@ -1,68 +1,30 @@
-/* ======== BASE ======== */
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455; /* виправлено */
-  background-color: #fff;
-  margin: 0;
-  line-height: 1.5;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1, h2, h3, p {
+  color: #434455;
+  background-color: #ffffff;
   margin: 0;
 }
 
-/* ======== HEADER ======== */
-.header {
-  border-bottom: 1px solid #e7e9fc;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-/* LOGO */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
   color: #4d5ae5;
-  letter-spacing: 0.03em;
-  line-height: 1.17; /* Додано */
-}
-.logo span {
-  color: #2e2f42; /* для частини тексту */
 }
 
-/* NAVIGATION */
-.nav-list {
-  display: flex;
-  gap: 30px;
+.logo-span {
+  color: #2e2f42;
+}
+
+.logo-span-footer {
+  color: #f4f4fd;
 }
 
 .nav-link {
   font-weight: 500;
-  font-size: 16px;
   color: #2e2f42;
-  letter-spacing: 0.02em; /* Додано */
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -70,20 +32,9 @@ h1, h2, h3, p {
   color: #404bbf;
 }
 
-/* CONTACTS */
-.contacts {
-  font-style: normal; /* Додано */
-}
-.contacts ul {
-  display: flex;
-  gap: 20px;
-}
-
 .contact-link {
-  font-size: 16px;
   color: #434455;
-  letter-spacing: 0.02em; /* Додано */
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .contact-link:hover,
@@ -91,33 +42,27 @@ h1, h2, h3, p {
   color: #404bbf;
 }
 
-/* ======== HERO ======== */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
   background-color: #2e2f42;
-  color: #fff;
+  text-align: center;
+  padding: 120px 0;
 }
 
 .hero-title {
-  font-size: 56px; /* Додано */
-  font-weight: 700;
-  line-height: 1.07; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  margin-bottom: 30px;
+  font-size: 56px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
-  font-size: 16px;
-  font-weight: 500;
   background-color: #4d5ae5;
-  color: #fff;
+  color: #ffffff;
   border: none;
-  padding: 14px 32px;
+  padding: 16px 32px;
   cursor: pointer;
-  line-height: 1.5; /* Додано */
-  letter-spacing: 0.04em; /* Додано */
-  transition: background-color 0.3s ease;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -125,105 +70,36 @@ h1, h2, h3, p {
   background-color: #404bbf;
 }
 
-/* ======== FEATURES ======== */
-.features {
-  padding: 120px 20px;
-}
-
-.features-title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  margin-bottom: 10px;
+.features-title,
+.section-title,
+.team-name,
+.portfolio-subtitle {
   color: #2e2f42;
 }
 
-.features-text {
-  font-size: 16px;
+.features-text,
+.team-role,
+.portfolio-text,
+.footer-text {
   color: #434455;
-  letter-spacing: 0.02em; /* Додано */
 }
 
-/* ======== TEAM ======== */
-.team {
-  background-color: #f4f4fd;
-  padding: 120px 20px;
-  text-align: center;
+.features-item {
+  background-color: #ffffff;
+  padding: 20px;
 }
 
-.team-title {
-  font-size: 36px;
-  margin-bottom: 50px;
-  line-height: 1.11; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  text-transform: capitalize; /* Додано */
-}
-
-.team-name {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  margin: 15px 0 5px;
-}
-
-.team-role {
-  font-size: 16px;
-  color: #434455;
-  letter-spacing: 0.02em; /* Додано */
-}
-
-/* ======== PORTFOLIO ======== */
-.portfolio {
-  padding: 120px 20px;
-}
-
-.portfolio-title {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
-  line-height: 1.11; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  text-transform: capitalize; /* Додано */
-}
-
-.portfolio-item h3 {
-  font-size: 20px;
-  font-weight: 500; /* Додано */
-  line-height: 1.2; /* Додано */
-  letter-spacing: 0.02em; /* Додано */
-  margin: 16px;
-}
-
-.portfolio-item p {
-  font-size: 16px;
-  color: #434455;
-  letter-spacing: 0.02em; /* Додано */
-  margin: 0 16px 16px;
-}
-
-/* ======== FOOTER ======== */
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  padding: 40px;
-  text-align: left;
-}
-
-.footer .logo {
-  color: #4d5ae5;
-  display: inline-block;
-  margin-bottom: 20px;
-  line-height: 1.17; /* Додано */
-}
-.footer .logo span {
-  color: #f4f4fd; /* Додано */
+  text-align: center;
+  padding: 40px 0;
 }
 
 .footer-text {
-  font-size: 16px;
-  max-width: 300px;
-  letter-spacing: 0.02em; /* Додано */
+  max-width: 400px;
+  margin: 0 auto;
+  color: #f4f4fd;
 }
+
 

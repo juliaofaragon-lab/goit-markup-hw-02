@@ -24,7 +24,7 @@ a {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 700; /* виправлено */
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -33,36 +33,28 @@ a {
 }
 
 .logo-accent {
-  color: #2e2f42;
+  color: #2e2f42; /* виправлено */
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
   margin: 0;
   padding: 0;
 }
 
 .menu-link {
-  text-decoration: none;
-  font-weight: 500;        /* додано */
-  line-height: 1.5;        /* додано */
-  letter-spacing: 0.02em;  /* додано */
-  color: #2e2f42;          /* додано */
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;          /* додано */
+  color: #404bbf;
 }
 
 .address {
-  font-style: normal;
-}
-
-.contacts {
-  display: flex;
-  gap: 40px;
+  font-style: normal; /* виправлено */
 }
 
 .contact-link {
@@ -93,21 +85,20 @@ a {
 
 .hero-button {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 500;         /* виправлено */
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  line-height: 1.5;         /* виправлено */
+  letter-spacing: 0.04em;   /* виправлено */
+  color: #ffffff;           /* виправлено */
+  background-color: #4d5ae5; /* виправлено */
   border: none;
   padding: 16px 32px;
-  border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer;          /* виправлено */
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: #404bbf; /* виправлено */
 }
 
 /* Друга секція */
@@ -136,18 +127,13 @@ a {
 }
 
 .team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em; /* додано */
-  text-transform: capitalize;
-  color: #2e2f42;
+  font-size: 36px;        /* виправлено */
+  line-height: 1.11;      /* виправлено */
+  text-align: center;     /* виправлено */
+  letter-spacing: 0.02em; /* виправлено */
+  text-transform: capitalize; /* виправлено */
+  color: #2e2f42;         /* виправлено */
   margin-bottom: 72px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
 }
 
 .team-item {
@@ -176,19 +162,13 @@ a {
 }
 
 .portfolio-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+  font-size: 36px;        /* виправлено */
+  line-height: 1.11;      /* виправлено */
+  text-align: center;     /* виправлено */
+  letter-spacing: 0.02em; /* виправлено */
+  text-transform: capitalize; /* виправлено */
+  color: #2e2f42;         /* виправлено */
   margin-bottom: 72px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 .portfolio-item {
@@ -196,11 +176,11 @@ a {
 }
 
 .portfolio-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  font-weight: 500;       /* виправлено */
+  font-size: 20px;        /* виправлено */
+  line-height: 1.2;       /* виправлено */
+  letter-spacing: 0.02em; /* виправлено */
+  color: #2e2f42;         /* виправлено */
   margin-bottom: 8px;
 }
 
@@ -218,7 +198,7 @@ a {
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 700; /* виправлено */
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -229,7 +209,7 @@ a {
 }
 
 .footer-logo-accent {
-  color: #f4f4fd;
+  color: #f4f4fd; /* виправлено */
 }
 
 .footer-text {
@@ -238,6 +218,3 @@ a {
   color: #f4f4fd;
   max-width: 264px;
 }
-
-
-

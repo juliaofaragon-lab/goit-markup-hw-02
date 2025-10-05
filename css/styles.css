@@ -1,17 +1,14 @@
 :root {
   /* Головні кольори */
-  --iris: #4d5ae5;      
-  --ocean: #404bbf;     
-  --navy-blue: #2e2f42; 
-  --slate: #434455;     
-  --white: #ffffff;     
-  --cloud: #f4f4fd;     
+  --iris: #4d5ae5;      /* Акцентний колір */
+  --ocean: #404bbf;     /* Активний стан (hover/focus) */
+  --navy-blue: #2e2f42; /* Основний фон, заголовки */
+  --slate: #434455;     /* Основний текст */
+  --white: #ffffff;     /* Білий фон, текст на темному фоні */
+  --cloud: #f4f4fd;     /* Світло-сірий фон, футер лого */
 }
 
 /* Base Styles */
-/* Вимога: body заданий стиль font-family: "Roboto", sans-serif */
-/* Вимога: body заданий стиль color: #434455 */
-/* Вимога: body заданий стиль background-color: #FFFFFF */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--slate);
@@ -28,22 +25,21 @@ body {
 }
 
 .visually-hidden {
-  position: absolute; 
-  width: 1px;         
-  height: 1px;        
-  margin: -1px;       
-  border: 0;          
-  padding: 0;         
-  white-space: nowrap; 
-  clip-path: inset(100%); 
-  clip: rect(0 0 0 0);    
-  overflow: hidden;       
-  /* Видалено: left, top, box-sizing, display, align-items, flex-direction, gap, order, flex-grow */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-
+/* Стилізація контейнера */
 .container {
-  width: 1158px; 
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px; 
 }
@@ -80,7 +76,6 @@ body {
   gap: 40px; 
 }
 
-/* Виправлення: Колір hover/focus на #404bbf */
 .menu-link {
   display: block; 
   padding: 24px 0; 
@@ -107,7 +102,7 @@ body {
   gap: 40px; 
 }
 
-/* Виправлення: Колір hover/focus на #404bbf */
+
 .contact-link {
   display: block; 
   padding: 24px 0; 
@@ -157,7 +152,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Виправлення: Колір фону кнопки hover/focus на #404BBF */
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404BBF; 
@@ -195,7 +189,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-/* Team & Portfolio (Заголовки секцій та макети) */
+/* Team & Portfolio */
 /* ---------------------------------------------------- */
 .section-title {
   font-size: 36px;

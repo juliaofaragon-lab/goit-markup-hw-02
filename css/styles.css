@@ -1,62 +1,63 @@
 :root {
   /* Головні кольори */
-  --iris: #4d5ae5;      /* Акцентний колір (кнопки, посилання :hover/:focus) */
-  --ocean: #404bbf;     /* Активний стан (Кнопки та посилання при :hover/:focus) */
-  --navy-blue: #2e2f42; /* Основний фон (Hero, Footer), заголовки */
-  --slate: #434455;     /* Основний текст (body color) */
-  --white: #ffffff;     /* Білий фон, текст на темному фоні */
-  --cloud: #f4f4fd;     /* Світло-сірий фон (Team, Footer Logo Span) */
-  --light-slate: #8e8f99; /* Додатковий сірий */
+  --iris: #4d5ae5;      
+  --ocean: #404bbf;     
+  --navy-blue: #2e2f42; 
+  --slate: #434455;     
+  --white: #ffffff;     
+  --cloud: #f4f4fd;     
 }
 
 /* Base Styles */
+/* Вимога: body заданий стиль font-family: "Roboto", sans-serif */
+/* Вимога: body заданий стиль color: #434455 */
+/* Вимога: body заданий стиль background-color: #FFFFFF */
 body {
-  font-family: 'Roboto', sans-serif; /* Вимога: font-family: "Roboto", sans-serif */
-  color: var(--slate);                /* Вимога: color: #434455 */
-  background-color: var(--white);     /* Вимога: background-color: #FFFFFF */
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
-/* Скидання стилів (припускаємо, що для ul/li використовується клас list) */
 .list {
-  list-style: none;
+  list-style: none; 
   margin: 0;
-  padding: 0;
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  position: absolute; 
+  width: 1px;         
+  height: 1px;        
+  margin: -1px;       
+  border: 0;          
+  padding: 0;         
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0);    
+  overflow: hidden;       
+  /* Видалено: left, top, box-sizing, display, align-items, flex-direction, gap, order, flex-grow */
 }
 
-/* Стилізація контейнера для обмеження ширини та центрування (потрібно додати в HTML!) */
+
 .container {
-  width: 1158px;
+  width: 1158px; 
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; 
 }
 
 /* ---------------------------------------------------- */
 /* Header */
 /* ---------------------------------------------------- */
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc; 
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  display: flex; 
+  align-items: center; 
 }
 
 .logo {
@@ -67,7 +68,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
-  text-decoration: none;
   margin-right: 76px;
 }
 
@@ -76,26 +76,25 @@ body {
 }
 
 .nav-list {
-  display: flex;
-  gap: 40px;
+  display: flex; 
+  gap: 40px; 
 }
 
-/* Виправлення: Зміна кольору при ховері/фокусі на #404bbf */
+/* Виправлення: Колір hover/focus на #404bbf */
 .menu-link {
-  display: block;
-  padding: 24px 0;
+  display: block; 
+  padding: 24px 0; 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--ocean); /* Вимога: color: #404bbf */
+  color: var(--ocean); /* ВИПРАВЛЕНО: color: #404bbf */
 }
 
 .contacts {
@@ -104,25 +103,24 @@ body {
 }
 
 .contacts ul {
-  display: flex;
-  gap: 40px;
+  display: flex; 
+  gap: 40px; 
 }
 
-/* Виправлення: Зміна кольору при ховері/фокусі на #404bbf */
+/* Виправлення: Колір hover/focus на #404bbf */
 .contact-link {
-  display: block;
-  padding: 24px 0;
+  display: block; 
+  padding: 24px 0; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--ocean); /* Вимога: color: #404bbf */
+  color: var(--ocean); /* ВИПРАВЛЕНО: color: #404bbf */
 }
 
 /* ---------------------------------------------------- */
@@ -130,7 +128,7 @@ body {
 /* ---------------------------------------------------- */
 .hero {
   background-color: var(--navy-blue);
-  padding: 188px 0;
+  padding: 188px 0; 
   text-align: center;
 }
 
@@ -152,17 +150,17 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
+  border-radius: 4px; 
+  padding: 16px 32px; 
   min-width: 169px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Виправлення: Зміна кольору фону кнопки при ховері/фокусі на #404bbf */
+/* Виправлення: Колір фону кнопки hover/focus на #404BBF */
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--ocean); /* Вимога: background-color: #404BBF */
+  background-color: var(--ocean); /* ВИПРАВЛЕНО: background-color: #404BBF */
 }
 
 /* ---------------------------------------------------- */
@@ -173,33 +171,31 @@ body {
 }
 
 .features-list {
-  display: flex;
-  gap: 24px;
+  display: flex; 
+  gap: 24px; 
 }
 
 .features-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4); 
 }
 
-/* Виправлення: Точні стилі для заголовка */
 .features-title {
-  font-weight: 500;         /* Вимога: font-weight: 500 */
-  font-size: 20px;          /* Вимога: font-size: 20px */
-  line-height: 1.2;         /* Вимога: line-height: 1.2 */
-  letter-spacing: 0.02em;   /* Вимога: letter-spacing: 0.02em */
-  color: var(--navy-blue);  /* Вимога: color: #2e2f42 */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
   margin-bottom: 8px;
 }
 
-/* Виправлення: Точні стилі для параграфа */
 .features-text {
   font-size: 16px;
-  line-height: 1.5;         /* Вимога: line-height: 1.5 */
-  letter-spacing: 0.02em;   /* Вимога: letter-spacing: 0.02em */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ---------------------------------------------------- */
-/* Team & Portfolio (Заголовки секцій) */
+/* Team & Portfolio (Заголовки секцій та макети) */
 /* ---------------------------------------------------- */
 .section-title {
   font-size: 36px;
@@ -217,17 +213,17 @@ body {
 }
 
 .team-list {
-  display: flex;
-  gap: 24px;
+  display: flex; 
+  gap: 24px; 
 }
 
 .team-item {
   background-color: var(--white);
-  width: calc((100% - 3 * 24px) / 4);
-  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 24px) / 4); 
+  border-radius: 0px 0px 4px 4px; 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
               0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08);
+              0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .team-item img {
@@ -258,21 +254,21 @@ body {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  display: flex; 
+  flex-wrap: wrap; 
+  column-gap: 24px; 
+  row-gap: 48px; 
 }
 
 .portfolio-item {
-  width: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 2 * 24px) / 3); 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08);
+                0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .portfolio-item img {
@@ -287,32 +283,29 @@ body {
   color: var(--navy-blue);
   margin-top: 32px;
   margin-bottom: 8px;
-  padding: 0 16px;
+  padding: 0 16px; 
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 16px 32px;
+  padding: 0 16px 32px; 
 }
 
 /* ---------------------------------------------------- */
 /* Footer */
 /* ---------------------------------------------------- */
 .footer {
-  background-color: var(--navy-blue); /* Вимога: background-color: #2e2f42 */
+  background-color: var(--navy-blue);
   padding: 100px 0;
 }
 
 .logo-span-footer {
-  color: var(--cloud); /* Вимога: color: #f4f4fd */
+  color: var(--cloud);
 }
 
 .footer-text {
-  /* Вимога: line-height: 1.5 */
-  /* Вимога: color: var зі значенням #F4F4FD */
-  /* Вимога: letter-spacing: 0.02em */
   color: var(--cloud);
   font-size: 16px;
   line-height: 1.5;

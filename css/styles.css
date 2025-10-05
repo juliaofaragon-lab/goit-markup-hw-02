@@ -94,7 +94,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--ocean); /* ВИПРАВЛЕНО: color: #404bbf */
+  color: #404bbf; 
 }
 
 .contacts {
@@ -120,7 +120,7 @@ body {
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--ocean); /* ВИПРАВЛЕНО: color: #404bbf */
+  color: #404bbf; 
 }
 
 /* ---------------------------------------------------- */
@@ -160,7 +160,7 @@ body {
 /* Виправлення: Колір фону кнопки hover/focus на #404BBF */
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--ocean); /* ВИПРАВЛЕНО: background-color: #404BBF */
+  background-color: #404BBF; 
 }
 
 /* ---------------------------------------------------- */

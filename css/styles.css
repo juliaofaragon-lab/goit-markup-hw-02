@@ -1,7 +1,7 @@
 :root {
   /* Головні кольори */
   --iris: #4d5ae5;      /* Акцентний колір */
-  --ocean: #404bbf;     /* Активний стан (hover/focus) - Зберігаємо як змінну, але не використовуємо її для hover/focus */
+  --ocean: #404bbf;     /* Активний стан (hover/focus) */
   --navy-blue: #2e2f42; /* Основний фон, заголовки */
   --slate: #434455;     /* Основний текст */
   --white: #ffffff;     /* Білий фон, текст на темному фоні */
@@ -11,14 +11,15 @@
 /* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--slate);
-  background-color: var(--white);
+  color: #434455; 
+  background-color: #ffffff; 
 }
 
 /* Скидання стилів */
 .list {
   list-style: none;
   margin: 0;
+  padding: 0; 
 }
 
 .link {
@@ -31,6 +32,7 @@ body {
   margin: 0 auto;
   padding: 0 15px; 
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -54,11 +56,19 @@ body {
 
 
 .header .container {
-    overflow: hidden; 
+    text-align: center; 
+    padding-top: 24px;   
+    padding-bottom: 24px;
 }
 
-.header-container {
-    float: left;
+.header-container,
+.contacts {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contacts {
+    margin-left: 330px; 
 }
 
 .logo {
@@ -76,12 +86,8 @@ body {
   color: var(--navy-blue);
 }
 
-.nav-list {
-  float: left;
-}
-
 .nav-list li {
-    float: left;
+    display: inline-block;
     margin-right: 40px;
 }
 
@@ -92,7 +98,6 @@ body {
 
 .menu-link {
   display: block; 
-  padding: 24px 0; 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -108,18 +113,16 @@ body {
 
 .contacts {
   font-style: normal;
-  float: right;
 }
 
 .contacts-list li {
-    float: left;
+    display: inline-block;
     margin-left: 40px;
 }
 
 
 .contact-link {
   display: block; 
-  padding: 24px 0; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -180,14 +183,26 @@ body {
 }
 
 .features-list {
-  overflow: hidden; 
-  margin-left: -24px; 
+  text-align: justify; 
+  text-align-last: justify;
+  margin-bottom: 24px;
+}
+
+.features-list:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
 }
 
 .features-item {
-  float: left;
-  margin-left: 24px;
-  width: calc((100% - 4 * 24px) / 4); 
+  display: inline-block;
+  vertical-align: top;
+  width: calc((100% - 3 * 24px) / 4);
+  margin-right: 24px;
+}
+
+.features-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .features-title {
@@ -224,19 +239,30 @@ body {
 }
 
 .team-list {
-  overflow: hidden;
-  margin-left: -24px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.team-list:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
 }
 
 .team-item {
-  float: left;
-  margin-left: 24px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
   background-color: var(--white);
-  width: calc((100% - 4 * 24px) / 4); 
+  width: calc((100% - 3 * 24px) / 4); 
   border-radius: 0px 0px 4px 4px; 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
               0px 1px 1px rgba(46, 47, 66, 0.16), 
               0px 2px 1px rgba(46, 47, 66, 0.08); 
+}
+
+.team-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .team-item img {
@@ -267,16 +293,27 @@ body {
 }
 
 .portfolio-list {
-  overflow: hidden;
-  margin-left: -24px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.portfolio-list:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
 }
 
 .portfolio-item {
-  float: left;
-  margin-left: 24px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
   margin-bottom: 48px; 
-  width: calc((100% - 3 * 24px) / 3); 
+  width: calc((100% - 2 * 24px) / 3); 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .portfolio-item:nth-last-child(-n + 3) {

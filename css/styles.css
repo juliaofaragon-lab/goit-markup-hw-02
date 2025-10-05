@@ -24,7 +24,7 @@ a {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700; /* виправлено */
+  font-weight: 700; 
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -33,8 +33,7 @@ a {
 }
 
 .logo-accent {
-  color: #2e2f42; /* виправлено */
-}
+  color: #2e2f42; 
 
 .menu {
   margin: 0;
@@ -54,7 +53,7 @@ a {
 }
 
 .address {
-  font-style: normal; /* виправлено */
+  font-style: normal; 
 }
 
 .contact-link {
@@ -85,20 +84,20 @@ a {
 
 .hero-button {
   font-family: inherit;
-  font-weight: 500;         /* виправлено */
+  font-weight: 500;         
   font-size: 16px;
-  line-height: 1.5;         /* виправлено */
-  letter-spacing: 0.04em;   /* виправлено */
-  color: #ffffff;           /* виправлено */
-  background-color: #4d5ae5; /* виправлено */
+  line-height: 1.5;         
+  letter-spacing: 0.04em;   
+  color: #ffffff;           
+  background-color: #4d5ae5; 
   border: none;
   padding: 16px 32px;
-  cursor: pointer;          /* виправлено */
+  cursor: pointer;          
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf; /* виправлено */
+  background-color: #404bbf; 
 }
 
 /* Друга секція */
@@ -127,12 +126,12 @@ a {
 }
 
 .team-title {
-  font-size: 36px;        /* виправлено */
-  line-height: 1.11;      /* виправлено */
-  text-align: center;     /* виправлено */
-  letter-spacing: 0.02em; /* виправлено */
-  text-transform: capitalize; /* виправлено */
-  color: #2e2f42;         /* виправлено */
+  font-size: 36px;        
+  line-height: 1.11;      
+  text-align: center;     
+  letter-spacing: 0.02em; 
+  text-transform: capitalize; 
+  color: #2e2f42;         
   margin-bottom: 72px;
 }
 
@@ -162,12 +161,12 @@ a {
 }
 
 .portfolio-title {
-  font-size: 36px;        /* виправлено */
-  line-height: 1.11;      /* виправлено */
-  text-align: center;     /* виправлено */
-  letter-spacing: 0.02em; /* виправлено */
-  text-transform: capitalize; /* виправлено */
-  color: #2e2f42;         /* виправлено */
+  font-size: 36px;        
+  line-height: 1.11;      
+  text-align: center;     
+  letter-spacing: 0.02em; 
+  text-transform: capitalize; 
+  color: #2e2f42;         
   margin-bottom: 72px;
 }
 
@@ -176,11 +175,11 @@ a {
 }
 
 .portfolio-name {
-  font-weight: 500;       /* виправлено */
-  font-size: 20px;        /* виправлено */
-  line-height: 1.2;       /* виправлено */
-  letter-spacing: 0.02em; /* виправлено */
-  color: #2e2f42;         /* виправлено */
+  font-weight: 500;       
+  font-size: 20px;        
+  line-height: 1.2;       
+  letter-spacing: 0.02em; 
+  color: #2e2f42;         
   margin-bottom: 8px;
 }
 
@@ -198,7 +197,7 @@ a {
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700; /* виправлено */
+  font-weight: 700; 
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -209,7 +208,7 @@ a {
 }
 
 .footer-logo-accent {
-  color: #f4f4fd; /* виправлено */
+  color: #f4f4fd; 
 }
 
 .footer-text {

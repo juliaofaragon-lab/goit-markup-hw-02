@@ -8,14 +8,13 @@
 }
 
 /* Base Styles */
-/* body */
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
-/* Скидання стилів: мінімум */
+/* Скидання стилів */
 .list {
   list-style: none;
   margin: 0;
@@ -47,13 +46,12 @@ body {
 }
 
 /* ---------------------------------------------------- */
-/* Header */
+/* Header (ВИПРАВЛЕНО Hover/Focus) */
 /* ---------------------------------------------------- */
 .header {
   border-bottom: 1px solid #e7e9fc; 
 }
 
-/* ВИПРАВЛЕНО: ЛОГОТИП (повна відповідність вимогам) */
 .logo {
   font-family: "Raleway", sans-serif; 
   font-weight: 700;                   
@@ -69,7 +67,7 @@ body {
   color: var(--navy-blue);
 }
 
-/* ВИПРАВЛЕНО: Hover/Focus для навігаційних посилань */
+/* Навігаційні посилання: ВИПРАВЛЕНО (кожен стан окремо) */
 .menu-link {
   display: block; 
   padding: 24px 0; 
@@ -81,16 +79,19 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover,
+.menu-link:hover {
+  color: #404bbf; /* Вимога: color: #404bbf */
+}
+
 .menu-link:focus {
-  color: #404bbf; /* Прямий Hex-код: #404bbf */
+  color: #404bbf; /* Вимога: color: #404bbf */
 }
 
 .contacts {
   font-style: normal;
 }
 
-/* ВИПРАВЛЕНО: Hover/Focus для контактних посилань */
+/* Контактні посилання: ВИПРАВЛЕНО (кожен стан окремо) */
 .contact-link {
   display: block; 
   padding: 24px 0; 
@@ -101,13 +102,16 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
+.contact-link:hover {
+  color: #404bbf; /* Вимога: color: #404bbf */
+}
+
 .contact-link:focus {
-  color: #404bbf; /* Прямий Hex-код: #404bbf */
+  color: #404bbf; /* Вимога: color: #404bbf */
 }
 
 /* ---------------------------------------------------- */
-/* Hero */
+/* Hero (ВИПРАВЛЕНО Hover/Focus) */
 /* ---------------------------------------------------- */
 .hero {
   background-color: var(--navy-blue);
@@ -140,14 +144,17 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВИПРАВЛЕНО: Hover/Focus для кнопки Hero */
-.hero-btn:hover,
+/* ВИПРАВЛЕНО: Hover/Focus для кнопки Hero (кожен стан окремо) */
+.hero-btn:hover {
+  background-color: #404BBF; /* Вимога: background-color: #404BBF */
+}
+
 .hero-btn:focus {
-  background-color: #404BBF; /* Прямий Hex-код: #404BBF */
+  background-color: #404BBF; /* Вимога: background-color: #404BBF */
 }
 
 /* ---------------------------------------------------- */
-/* Features (Services) */
+/* Решта секцій (залишаємо, як було) */
 /* ---------------------------------------------------- */
 .features {
   padding: 120px 0;
@@ -176,9 +183,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ---------------------------------------------------- */
-/* Team & Portfolio */
-/* ---------------------------------------------------- */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -279,7 +283,6 @@ body {
   padding: 100px 0;
 }
 
-/* ВИПРАВЛЕНО: ЛОГОТИП У ФУТЕРІ (повна відповідність вимогам) */
 .footer .logo {
   font-family: "Raleway", sans-serif; 
   font-weight: 700;                   

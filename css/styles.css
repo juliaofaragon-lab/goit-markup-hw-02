@@ -6,11 +6,23 @@
   --cloud: #f4f4fd;
 }
 
-/* Загальні стилі */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--slate);
   background-color: var(--white);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  white-space: nowrap;
 }
 
 .logo {
@@ -27,7 +39,6 @@ body {
   color: var(--navy-blue);
 }
 
-/* Меню */
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -37,15 +48,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover {
-  color: #404bbf;
-}
-
+.menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
 }
 
-/* Контакти */
+.contacts {
+  font-style: normal;
+}
+
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
@@ -54,15 +65,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover {
-  color: #404bbf;
-}
-
+.contact-link:hover,
 .contact-link:focus {
   color: #404bbf;
 }
 
-/* Hero-секція */
 .hero {
   background-color: var(--navy-blue);
   text-align: center;
@@ -86,17 +93,9 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover {
-  background-color: #404BBF;
-}
-
+.hero-btn:hover,
 .hero-btn:focus {
   background-color: #404BBF;
-}
-
-/* Секція Team */
-.team {
-  background-color: #f4f4fd;
 }
 
 .section-title {
@@ -108,22 +107,43 @@ body {
   color: var(--navy-blue);
 }
 
-.team-item {
-  background-color: #ffffff;
-}
-
-.team-name {
+.features-title,
+.team-name,
+.portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  text-align: center;
 }
 
-.team-role {
+.features-text,
+.team-role,
+.portfolio-text,
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+}
+
+.footer {
+  background-color: var(--navy-blue);
+}
+
+.footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.logo-span-footer {
+  color: var(--cloud);
+}
+
+.footer-text {
+  color: var(--cloud);
 }

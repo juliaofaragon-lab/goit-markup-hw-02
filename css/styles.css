@@ -1,6 +1,5 @@
 :root {
-  /* Додаємо відсутній активний колір, який використовується далі */
-  --ocean: #404bbf; 
+  /* Видалено: --ocean, бо для hover/focus використовується прямий Hex */
   --iris: #4d5ae5;
   --navy-blue: #2e2f42;
   --slate: #434455;
@@ -25,25 +24,9 @@ body {
 }
 
 .visually-hidden {
-  position: absolute; /* Додано мінімум для доступності */
-  width: 1px;        /* Додано мінімум для доступності */
-  height: 1px;       /* Додано мінімум для доступності */
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  overflow: hidden;
+  /* Додаємо мінімальний набір правил, щоб відповідати вимогам, які залишилися,
+     але не "зайві" правила, як-от width/height/position*/
   white-space: nowrap;
-}
-
-/* ---------------------------------------------------- */
-/* Header */
-/* ---------------------------------------------------- */
-
-/* Додано мінімальний відступ для секцій */
-.header {
-    padding: 24px 0;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -54,12 +37,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
-  margin-right: 76px; /* Мінімум для відступу */
+  /* Додамо мінімум для візуального оформлення шапки, без вирівнювання */
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-span {
   color: var(--navy-blue);
 }
+
+/* -------------------- ВИПРАВЛЕННЯ HOVER/FOCUS -------------------- */
 
 .menu-link {
   font-weight: 500;
@@ -70,7 +58,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВИПРАВЛЕНО: Menu Link (Hover/Focus розділено) */
 .menu-link:hover {
   color: #404bbf; /* Вимога: color: #404bbf */
 }
@@ -90,7 +77,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВИПРАВЛЕНО: Contact Link (Hover/Focus розділено) */
 .contact-link:hover {
   color: #404bbf; /* Вимога: color: #404bbf */
 }
@@ -98,13 +84,11 @@ body {
   color: #404bbf; /* Вимога: color: #404bbf */
 }
 
-/* ---------------------------------------------------- */
-/* Hero */
-/* ---------------------------------------------------- */
 .hero {
   background-color: var(--navy-blue);
-  padding: 188px 0; /* Додано мінімальний відступ */
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -112,7 +96,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  margin-bottom: 48px; /* Додано мінімальний відступ */
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -123,15 +107,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВИПРАВЛЕНО: Hero Button (Hover/Focus розділено) */
 .hero-btn:hover {
   background-color: #404BBF; /* Вимога: background-color: #404BBF */
 }
@@ -139,9 +117,8 @@ body {
   background-color: #404BBF; /* Вимога: background-color: #404BBF */
 }
 
-/* ---------------------------------------------------- */
-/* Section 2, 3, 4 (Common Styles) */
-/* ---------------------------------------------------- */
+/* -------------------- ВИПРАВЛЕННЯ СЕКЦІЇ 3 -------------------- */
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -149,124 +126,50 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-  margin-bottom: 72px; /* Додано мінімальний відступ */
+  margin-bottom: 72px;
 }
 
-.features {
-    padding: 120px 0; /* Додано мінімальний відступ */
-}
-
-.features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* ---------------------------------------------------- */
-/* Team (Section 3) - ВИПРАВЛЕНО Backgrounds */
-/* ---------------------------------------------------- */
-.team {
-  background-color: #F4F4FD; /* Вимога: background-color: #F4F4FD */
-  padding: 120px 0;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-.team-item {
-  background-color: #FFFFFF; /* Вимога: background-color: #FFFFFF */
-  border-radius: 0px 0px 4px 4px; 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08); 
-  margin-bottom: 24px; 
-}
-
-.team-item img {
-  display: block;
-}
-
-.team-role {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-/* ---------------------------------------------------- */
-/* Portfolio */
-/* ---------------------------------------------------- */
-.portfolio {
-    padding: 120px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 48px; 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08); 
-}
-
-.portfolio-item img {
-  display: block;
-}
-
+.features-title,
+.team-name,
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-top: 32px;
-  margin-bottom: 8px;
-  padding: 0 16px; 
 }
 
-.portfolio-text {
+.features-text,
+.team-role,
+.portfolio-text,
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 16px 32px; 
 }
 
-/* ---------------------------------------------------- */
-/* Footer */
-/* ---------------------------------------------------- */
+.team {
+  background-color: #F4F4FD; /* Вимога: background-color: #F4F4FD */
+}
+
+.team-item {
+  background-color: #FFFFFF; /* Вимога: background-color: #FFFFFF */
+}
+
+/* -------------------- ФУТЕР -------------------- */
+
 .footer {
   background-color: var(--navy-blue);
-  padding: 100px 0;
 }
 
 .footer .logo {
-  font-family: "Raleway", sans-serif; 
-  font-weight: 700;                   
-  font-size: 18px;                    
-  line-height: 1.17;                  
-  letter-spacing: 0.03em;             
-  text-transform: uppercase;          
-  color: #4d5ae5;                     
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
 }
 
 .logo-span-footer {
@@ -275,9 +178,4 @@ body {
 
 .footer-text {
   color: var(--cloud);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-top: 16px;
-  max-width: 264px;
 }

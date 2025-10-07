@@ -1,7 +1,6 @@
 :root {
   /* Головні кольори */
   --iris: #4d5ae5;      /* Акцентний колір */
-  --ocean: #404bbf;     /* Активний стан (hover/focus) */
   --navy-blue: #2e2f42; /* Основний фон, заголовки */
   --slate: #434455;     /* Основний текст */
   --white: #ffffff;     /* Білий фон, текст на темному фоні */
@@ -9,12 +8,14 @@
 }
 
 /* Base Styles */
+/* body */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455; /* body color */
-  background-color: #ffffff; /* body background-color */
+  color: #434455;
+  background-color: #ffffff;
 }
 
+/* Скидання стилів: мінімум */
 .list {
   list-style: none;
   margin: 0;
@@ -25,12 +26,14 @@ body {
   text-decoration: none;
 }
 
+/* Стилізація контейнера: мінімум */
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px; 
 }
 
+/* visually-hidden: мінімум правил */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,10 +41,9 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
 }
 
 /* ---------------------------------------------------- */
@@ -51,26 +53,20 @@ body {
   border-bottom: 1px solid #e7e9fc; 
 }
 
-    /* Немає display: flex або float */
-}
-
+/* ВИПРАВЛЕНО: ЛОГОТИП (повна відповідність вимогам) */
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--iris);
+  font-family: "Raleway", sans-serif; 
+  font-weight: 700;                   
+  font-size: 18px;                    
+  line-height: 1.17;                  
+  letter-spacing: 0.03em;             
+  text-transform: uppercase;          
+  color: #4d5ae5;                     
   margin-right: 76px;
 }
 
 .logo-span {
   color: var(--navy-blue);
-}
-
-.nav-list {
-    margin-right: 330px; 
 }
 
 /* ВИПРАВЛЕНО: Hover/Focus для навігаційних посилань */
@@ -87,7 +83,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf; 
+  color: #404bbf; /* Прямий Hex-код: #404bbf */
 }
 
 .contacts {
@@ -107,7 +103,7 @@ body {
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #404bbf; 
+  color: #404bbf; /* Прямий Hex-код: #404bbf */
 }
 
 /* ---------------------------------------------------- */
@@ -147,7 +143,7 @@ body {
 /* ВИПРАВЛЕНО: Hover/Focus для кнопки Hero */
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF; 
+  background-color: #404BBF; /* Прямий Hex-код: #404BBF */
 }
 
 /* ---------------------------------------------------- */
@@ -158,9 +154,11 @@ body {
 }
 
 .features-list {
+    /* Без стилів вирівнювання */
 }
 
 .features-item {
+    margin-bottom: 24px;
 }
 
 .features-title {
@@ -197,6 +195,7 @@ body {
 }
 
 .team-list {
+    /* Без стилів вирівнювання */
 }
 
 .team-item {
@@ -236,6 +235,7 @@ body {
 }
 
 .portfolio-list {
+    /* Без стилів вирівнювання */
 }
 
 .portfolio-item {
@@ -277,6 +277,17 @@ body {
 .footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
+}
+
+/* ВИПРАВЛЕНО: ЛОГОТИП У ФУТЕРІ (повна відповідність вимогам) */
+.footer .logo {
+  font-family: "Raleway", sans-serif; 
+  font-weight: 700;                   
+  font-size: 18px;                    
+  line-height: 1.17;                  
+  letter-spacing: 0.03em;             
+  text-transform: uppercase;          
+  color: #4d5ae5;                     
 }
 
 .logo-span-footer {

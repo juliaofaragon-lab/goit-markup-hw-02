@@ -1,76 +1,45 @@
 :root {
-  /* Головні кольори */
-  --iris: #4d5ae5;      /* Акцентний колір */
-  --navy-blue: #2e2f42; /* Основний фон, заголовки */
-  --slate: #434455;     /* Основний текст */
-  --white: #ffffff;     /* Білий фон, текст на темному фоні */
-  --cloud: #f4f4fd;     /* Світло-сірий фон, футер лого */
+  --iris: #4d5ae5;
+  --navy-blue: #2e2f42;
+  --slate: #434455;
+  --white: #ffffff;
+  --cloud: #f4f4fd;
 }
 
-/* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
-/* Скидання стилів */
 .list {
   list-style: none;
   margin: 0;
-  padding: 0; 
 }
 
 .link {
   text-decoration: none;
 }
 
-/* Стилізація контейнера: мінімум */
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; 
-}
-
-/* visually-hidden: мінімум правил */
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  overflow: hidden;
   white-space: nowrap;
 }
 
-/* ---------------------------------------------------- */
-/* Header (ВИПРАВЛЕНО Hover/Focus) */
-/* ---------------------------------------------------- */
-.header {
-  border-bottom: 1px solid #e7e9fc; 
-}
-
 .logo {
-  font-family: "Raleway", sans-serif; 
-  font-weight: 700;                   
-  font-size: 18px;                    
-  line-height: 1.17;                  
-  letter-spacing: 0.03em;             
-  text-transform: uppercase;          
-  color: #4d5ae5;                     
-  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
 }
 
 .logo-span {
   color: var(--navy-blue);
 }
 
-/* Навігаційні посилання: ВИПРАВЛЕНО (кожен стан окремо) */
 .menu-link {
-  display: block; 
-  padding: 24px 0; 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -79,22 +48,16 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover {
-  color: #404bbf; /* Вимога: color: #404bbf */
-}
-
+.menu-link:hover,
 .menu-link:focus {
-  color: #404bbf; /* Вимога: color: #404bbf */
+  color: #404bbf;
 }
 
 .contacts {
   font-style: normal;
 }
 
-/* Контактні посилання: ВИПРАВЛЕНО (кожен стан окремо) */
 .contact-link {
-  display: block; 
-  padding: 24px 0; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -102,20 +65,13 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover {
-  color: #404bbf; /* Вимога: color: #404bbf */
-}
-
+.contact-link:hover,
 .contact-link:focus {
-  color: #404bbf; /* Вимога: color: #404bbf */
+  color: #404bbf;
 }
 
-/* ---------------------------------------------------- */
-/* Hero (ВИПРАВЛЕНО Hover/Focus) */
-/* ---------------------------------------------------- */
 .hero {
   background-color: var(--navy-blue);
-  padding: 188px 0; 
   text-align: center;
 }
 
@@ -124,8 +80,6 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 496px;
-  margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -136,51 +90,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: none;
-  border-radius: 4px; 
-  padding: 16px 32px; 
-  min-width: 169px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ВИПРАВЛЕНО: Hover/Focus для кнопки Hero (кожен стан окремо) */
-.hero-btn:hover {
-  background-color: #404BBF; /* Вимога: background-color: #404BBF */
-}
-
+.hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF; /* Вимога: background-color: #404BBF */
-}
-
-/* ---------------------------------------------------- */
-/* Решта секцій (залишаємо, як було) */
-/* ---------------------------------------------------- */
-.features {
-  padding: 120px 0;
-}
-
-.features-list {
-    /* Без стилів вирівнювання */
-}
-
-.features-item {
-    margin-bottom: 24px;
-}
-
-.features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  margin-bottom: 8px;
-}
-
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  background-color: #404BBF;
 }
 
 .section-title {
@@ -190,107 +105,39 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-  margin-bottom: 72px;
 }
 
-.team {
-  background-color: var(--cloud);
-  padding: 120px 0;
-}
-
-.team-list {
-    /* Без стилів вирівнювання */
-}
-
-.team-item {
-  background-color: var(--white);
-  border-radius: 0px 0px 4px 4px; 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-              0px 1px 1px rgba(46, 47, 66, 0.16), 
-              0px 2px 1px rgba(46, 47, 66, 0.08); 
-  margin-bottom: 24px; 
-}
-
-.team-item img {
-  display: block;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-.team-role {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.portfolio {
-  padding: 120px 0;
-}
-
-.portfolio-list {
-    /* Без стилів вирівнювання */
-}
-
-.portfolio-item {
-  margin-bottom: 48px; 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08); 
-}
-
-.portfolio-item img {
-  display: block;
-}
-
+.features-title,
+.team-name,
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-top: 32px;
-  margin-bottom: 8px;
-  padding: 0 16px; 
 }
 
-.portfolio-text {
+.features-text,
+.team-role,
+.portfolio-text,
+.footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 16px 32px; 
 }
 
-/* ---------------------------------------------------- */
-/* Footer */
-/* ---------------------------------------------------- */
 .footer {
   background-color: var(--navy-blue);
-  padding: 100px 0;
 }
 
 .footer .logo {
-  font-family: "Raleway", sans-serif; 
-  font-weight: 700;                   
-  font-size: 18px;                    
-  line-height: 1.17;                  
-  letter-spacing: 0.03em;             
-  text-transform: uppercase;          
-  color: #4d5ae5;                     
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
 }
 
 .logo-span-footer {
@@ -299,9 +146,4 @@ body {
 
 .footer-text {
   color: var(--cloud);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-top: 16px;
-  max-width: 264px;
 }

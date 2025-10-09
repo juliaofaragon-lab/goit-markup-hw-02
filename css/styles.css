@@ -53,13 +53,18 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover,
+.menu-link:hover {
+  color: #404bbf;
+}
+
 .menu-link:focus {
   color: #404bbf;
 }
 
-/* Вимога: перший пункт списку */
-.nav-list li:first-child .menu-link:hover,
+/* Вимога: перший пункт меню */
+.nav-list li:first-child .menu-link:hover {
+  color: #404bbf;
+}
 .nav-list li:first-child .menu-link:focus {
   color: #404bbf;
 }
@@ -76,13 +81,18 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
+.contact-link:hover {
+  color: #404bbf;
+}
+
 .contact-link:focus {
   color: #404bbf;
 }
 
 /* Вимога: перший пункт контактів */
-.contacts ul li:first-child .contact-link:hover,
+.contacts ul li:first-child .contact-link:hover {
+  color: #404bbf;
+}
 .contacts ul li:first-child .contact-link:focus {
   color: #404bbf;
 }
@@ -114,8 +124,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Вимога: hover/focus */
-.hero-btn:hover,
+/* Вимога: hover/focus окремо */
+.hero-btn:hover {
+  background-color: #404BBF;
+}
 .hero-btn:focus {
   background-color: #404BBF;
 }

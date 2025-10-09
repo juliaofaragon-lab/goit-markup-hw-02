@@ -15,7 +15,6 @@ body {
 .list {
   list-style: none;
   margin: 0;
-  padding: 0; 
 }
 
 .link {
@@ -35,7 +34,10 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.logo-span { color: #2e2f42; }
+
+.logo-span {
+  color: #2e2f42;
+}
 
 .menu-link {
   font-weight: 500;
@@ -44,29 +46,39 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.nav-list li:first-child .menu-link:hover { color: #404bbf; }
-.nav-list li:first-child .menu-link:focus { color: #404bbf; }
 
-.contacts { font-style: normal; }
+.nav-list li:first-child .menu-link:hover {
+  color: #404bbf;
+}
+
+.nav-list li:first-child .menu-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.contacts ul li:first-child .contact-link:hover { color: #404bbf; }
-.contacts ul li:first-child .contact-link:focus { color: #404bbf; }
 
-.hero-btn:hover { background-color: #404BBF; }
-.hero-btn:focus { background-color: #404BBF; }
+.contacts ul li:first-child .contact-link:hover {
+  color: #404bbf;
+}
+
+.contacts ul li:first-child .contact-link:focus {
+  color: #404bbf;
+}
+
 /* -------------------- HERO -------------------- */
 .hero-section {
   background-color: #2e2f42;
-  text-align: center; 
-  padding-top: 188px;
-  padding-bottom: 188px;
+  text-align: center;
 }
-
 
 .hero-title {
   font-size: 56px;
@@ -74,9 +86,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
 }
-
 
 .hero-btn {
   background-color: #4D5AE5;
@@ -93,6 +103,7 @@ body {
 .hero-btn:hover {
   background-color: #404BBF;
 }
+
 .hero-btn:focus {
   background-color: #404BBF;
 }
@@ -105,7 +116,6 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-  margin-bottom: 72px;
 }
 
 .features-title,

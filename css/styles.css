@@ -1,5 +1,4 @@
 :root {
-  /* Видалено: --ocean, бо для hover/focus використовується прямий Hex */
   --iris: #4d5ae5;
   --navy-blue: #2e2f42;
   --slate: #434455;
@@ -24,8 +23,6 @@ body {
 }
 
 .visually-hidden {
-  /* Додаємо мінімальний набір правил, щоб відповідати вимогам, які залишилися,
-     але не "зайві" правила, як-от width/height/position*/
   white-space: nowrap;
 }
 
@@ -37,7 +34,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
-  /* Додамо мінімум для візуального оформлення шапки, без вирівнювання */
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -47,8 +43,7 @@ body {
   color: var(--navy-blue);
 }
 
-/* -------------------- ВИПРАВЛЕННЯ HOVER/FOCUS -------------------- */
-
+/* -------------------- МЕНЮ -------------------- */
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -58,11 +53,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover {
-  color: #404bbf; /* Вимога: color: #404bbf */
-}
+.menu-link:hover,
 .menu-link:focus {
-  color: #404bbf; /* Вимога: color: #404bbf */
+  color: #404bbf;
+}
+
+/* Вимога: перший пункт списку */
+.nav-list li:first-child .menu-link:hover,
+.nav-list li:first-child .menu-link:focus {
+  color: #404bbf;
 }
 
 .contacts {
@@ -77,13 +76,18 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover {
-  color: #404bbf; /* Вимога: color: #404bbf */
-}
+.contact-link:hover,
 .contact-link:focus {
-  color: #404bbf; /* Вимога: color: #404bbf */
+  color: #404bbf;
 }
 
+/* Вимога: перший пункт контактів */
+.contacts ul li:first-child .contact-link:hover,
+.contacts ul li:first-child .contact-link:focus {
+  color: #404bbf;
+}
+
+/* -------------------- HERO -------------------- */
 .hero {
   background-color: var(--navy-blue);
   text-align: center;
@@ -110,15 +114,13 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover {
-  background-color: #404BBF; /* Вимога: background-color: #404BBF */
-}
+/* Вимога: hover/focus */
+.hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF; /* Вимога: background-color: #404BBF */
+  background-color: #404BBF;
 }
 
-/* -------------------- ВИПРАВЛЕННЯ СЕКЦІЇ 3 -------------------- */
-
+/* -------------------- СЕКЦІЇ -------------------- */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -149,15 +151,14 @@ body {
 }
 
 .team {
-  background-color: #F4F4FD; /* Вимога: background-color: #F4F4FD */
+  background-color: #F4F4FD;
 }
 
 .team-item {
-  background-color: #FFFFFF; /* Вимога: background-color: #FFFFFF */
+  background-color: #FFFFFF;
 }
 
 /* -------------------- ФУТЕР -------------------- */
-
 .footer {
   background-color: var(--navy-blue);
 }
